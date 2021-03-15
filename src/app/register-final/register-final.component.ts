@@ -64,4 +64,7 @@ export class RegisterFinalComponent implements OnInit {
     return this.registerForm.get('phone');
   }
 
+  get pwGroup(): any {
+    return this.registerForm.get(['password', 'confirmPassword']);
+  }
 }
